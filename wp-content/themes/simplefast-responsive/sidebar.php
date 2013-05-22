@@ -4,4 +4,12 @@
 <ul><?php wp_list_categories('&title_li='); ?></ul>
 </div>
 <?php endif; ?>	
+<div class="box">
+<?php
+if(is_search()){
+echo spp(get_search_query(), 'sidebar.html','');
+}
+
+?>	
+</div>
 </aside>

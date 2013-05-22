@@ -2,7 +2,8 @@
 <div style="clear: both"></div>
 <div id="container">
 <div id="contents">
-<h1><?php the_search_query();?> </h1>
+<?php echo spp(get_search_query());?>
+
 <?php get_template_part( 'loop' ); ?>	
 <div style="clear: both"></div>
 </div>

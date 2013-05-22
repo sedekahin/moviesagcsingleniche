@@ -6,6 +6,7 @@
 <section class="post-single"> <h1><?php the_title(); ?></h1>
 <div class="tags"><?php edit_post_link('Edit', '', ''); ?> <?php the_time('l, F jS Y.') ?>  &#124; <?php the_category(', ') ?> </div></section>  
 <?php the_content(); ?>	
+<?php echo spp(single_post_title( '', false )) ;?>
 <?php get_template_part( 'ads' ); ?>
 <div style="clear: both"></div>
 <section class="tags"><?php the_tags('tags: ',', ',''); ?></section><section class="social">
