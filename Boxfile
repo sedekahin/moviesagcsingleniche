@@ -1,0 +1,13 @@
+# default setting
+web1:
+  php_upload_max_filesize: "8M"
+  
+web1:
+  name: wp-web
+  shared_writable_dirs:
+    - wp-content/uploads/
+  after_build:
+    - "mv pagoda/wp-config.php wp-config.php"
+    - "rm -R pagoda"
+db1:
+  name: wp-db

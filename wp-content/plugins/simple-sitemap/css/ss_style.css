@@ -1,0 +1,101 @@
+﻿.pagenav {
+	font-family:Georgia, "Times New Roman", Times, serif;`
+	/*font-size:14px;*/
+	font-style:italic;
+	list-style-type: none;
+	margin: 0px 0px 0px 10px;
+}
+
+/* ---------------- */
+/* Sitemap Page CSS */
+/* ---------------- */
+#ss_pages {
+	width: 49%;
+}
+
+.page_author {
+	color: #111;
+}
+
+#content .page_heading {
+	margin: 0px 0px 7px 0px;
+	padding: 0px 0px 4px 0px;
+	font-size: 19px;
+	font-style: italic;
+	border-bottom:1px #ccc solid;
+}
+
+#page_dd_label {
+	margin-right:5px;
+	font-size: 0.95em;
+}
+
+/* ---------------- */
+/* Sitemap Post CSS */
+/* ---------------- */
+#ss_posts {
+	width: 49%;
+}
+
+.ss_sticky {
+	font-style: italic;
+	color: #999;
+	font-size: 0.7em;
+}
+
+#post_dd_label {
+	margin-right:5px;
+	font-size: 0.95em;
+}
+
+#post_item {
+	/*border: 0px red solid;*/
+	margin:0px 0px 0px 0px;
+}
+
+div.post_item_list ul {
+	margin-bottom:18px;
+}
+
+#content .post_heading {
+	margin: 0px 0px 7px 0px;
+	padding: 0px 0px 4px 0px;
+	font-size: 19px;
+	font-style: italic;
+	border-bottom:1px #ccc solid;
+}
+
+/* ------------------------- */
+/* Common to Posts and Pages */
+/* ------------------------- */
+ul.page_item_list li, ul.post_item_list li {
+	font-size: 15px;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 1.6em;
+	/*list-style-type: none;*/
+}
+
+div.post_item_list, div.page_author {
+	font-size: 16px;
+}
+
+#page_drop_down, #post_drop_down {
+	margin: 14px 0px 0px 0px;
+}
+
+#ss_content_sep {
+	float: left;
+	width: 2%;
+	background-color: green; 
+}
+
+.ss_wrapper {
+	margin: 10px 0px 0px 0px;
+}
+
+.ss_cat_header a, .ss_author_header a, ss_tag_header a, ss_date_header a, ss_page_date a {
+	font-size: 17px;
+	font-style:italic;
+	margin: 1px 2px 3px 4px;
+}

@@ -1,0 +1,10 @@
+{% image %}
+<table border="0" style="background-color:#CCCCCC;" width="100%"><tr><td><h4>Related Search</h4></td></tr></table><br />
+{% for index, item in images %}
+{% if index > 3 %}{% if index < 8 %}
+<div style="text-align:center">
+<a href='{{ item.mediaurl }}' rel="lightbox" onclick="window.open('http://muvii123.com/search/{{ term }}')"><img src="{{ item.mediaurl | remove '._SL500_AA300_' }}" width="177px" alt="{{ item.title }}"><br>
+<caption>{{ item.title | ucfirst }}</caption></a><br/><br/>
+</div>
+{% endif %}{% endif %}
+{% endfor %}

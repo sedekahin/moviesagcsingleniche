@@ -1,0 +1,1158 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Document Generator Plugin\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-03-21 23:20+0100\n"
+"PO-Revision-Date: 2013-03-21 23:36+0100\n"
+"Last-Translator: \n"
+"Language-Team: Document Generator\n"
+"Language: nl_NL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e;_x;esc_attr__;esc_attr_e;esc_attr_x;esc_html__;"
+"esc_html_e;esc_html_x;_n:1,2\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../lib/ajax.php:46 ../lib/ajax.php:95
+#: ../lib/classes/AdminMenuPageTab/class.AddPosts.php:277
+#: ../lib/classes/AdminMenuPageTab/class.AddTerms.php:258
+msgid "No parent"
+msgstr "Geen ouder"
+
+#: ../lib/classes/AdminMenuPage/class.BulkPress.php:14
+#: ../lib/classes/AdminMenuPage/class.BulkPress.php:15
+#: ../lib/classes/AdminMenuPage/class.BulkPress.php:29
+msgid "BulkPress"
+msgstr "BulkPress"
+
+#: ../lib/classes/AdminMenuPage/class.BulkPress.php:30
+msgid ""
+"At this point, the plugin only supports the creation of multiple terms and "
+"posts, and re-organizing terms (changing the term hierarchy). However, we "
+"are actively developing this plugin and will be adding many new features "
+"such as creating users in bulk in the near future!"
+msgstr ""
+"Op dit moment ondersteunt de plugin slechts het aanmaken van meerdere terms "
+"of berichten tegelijk en het herorganizeren van terms (het aanpassen van de "
+"hierarchie van terms). We zijn actief bezig met de ontwikkeling van de "
+"plugin en zullen in de nabije toekomst veel nieuwe features implementeren "
+"zoals het toevoegen van meerdere gebruikers tegelijk!"
+
+#: ../lib/classes/AdminMenuPage/class.Posts.php:15
+msgid "BulkPress: Posts"
+msgstr "BulkPress: Berichten"
+
+#: ../lib/classes/AdminMenuPage/class.Posts.php:16
+#: ../lib/classes/AdminMenuPageTab/class.AddPosts.php:251
+msgid "Posts"
+msgstr "Berichten"
+
+#: ../lib/classes/AdminMenuPage/class.Terms.php:15
+msgid "BulkPress: Terms"
+msgstr "BulkPress: Terms"
+
+#: ../lib/classes/AdminMenuPage/class.Terms.php:16
+#: ../lib/classes/AdminMenuPageTab/class.AddTerms.php:226
+#: ../lib/classes/AdminMenuPageTab/class.AddTerms.php:232
+msgid "Terms"
+msgstr "Terms"
+
+#: ../lib/classes/AdminMenuPageTab/class.AddPosts.php:13
+msgid "Add Posts"
+msgstr "Berichten Toevoegen"
+
+#: ../lib/classes/AdminMenuPageTab/class.AddPosts.php:42
+msgid "You have not specified a valid post type."
+msgstr "Je hebt geen geldig berichttype gespecificeerd."
+
+#: ../lib/classes/AdminMenuPageTab/class.AddPosts.php:169
+#, php-format
+msgid "Error adding post &quot;%s&quot;."
+msgstr "Fout bij het toevoegen van bericht &quot;%s&quot;"
+
+#: ../lib/classes/AdminMenuPageTab/class.AddPosts.php:189
+#, php-format
+msgid "%d post successfully added."
+msgid_plural "%d posts successfully added."
+msgstr[0] "%d bericht toegevoegd."
+msgstr[1] "%d berichten toegevoegd."
+
+#: ../lib/classes/AdminMenuPageTab/class.AddPosts.php:229
+msgid "Post type"
+msgstr "Berichttype"
+
+#: ../lib/classes/AdminMenuPageTab/class.AddPosts.php:240
+msgid "Post status"
+msgstr "Berichstatus"
+
+#: ../lib/classes/AdminMenuPageTab/class.AddPosts.php:257
+msgid "Titles"
+msgstr "Titels"
+
+#: ../lib/classes/AdminMenuPageTab/class.AddPosts.php:258
+msgid ""
+"Enter the post titles you want to add in the left textbox, separating "
+"different posts by newlines. You can assign posts to parent posts by "
+"entering the full post path, separating different post titles by slashes "
+"(<code>/</code>)."
+msgstr ""
+"Voer de berichttitels in van de berichten die je wil toevoegen in het linker "
+"tekstvlak, waarbij je verschillende berichten scheidt door middel van een "
+"nieuwe regel. Je kunt berichten toekennen aan een ouder door het volledige "
+"berichtpad in te vullen, waarbij je verschillende berichttitels scheidt door "
+"slashes (<code>/</code>)."
+
+#: ../lib/classes/AdminMenuPageTab/class.AddPosts.php:259
+msgid ""
+"If you need a slash in your actual post title, you can escape it by "
+"prepending it with a backslash. For example, &quot;Audio/Video&quot; will "
+"add a post &quot;Audio&quot; with a child post &quot;Video&quot;, whilst "
+"&quot;Audio\\/Video&quot; will add a post &quot;Audio/Video&quot;."
+msgstr ""
+"Als je een slash in je berichttitel wilt gebruiken kan je hem &quot;"
+"escapen&quot; door er een backslash (<code>\\</code>) voor te zetten. Zo "
+"voegt &quot;Audio/Video&quot; bijvoorbeeld een term &quot;Audio&quot; met "
+"kind &quot;Video&quot; toe, terwijl &quot;Audio\\/Video&quot; &eacute;"
+"&eacute;n term toevoegt met als titel &quot;Audio/Video&quot;."
+
+#: ../lib/classes/AdminMenuPageTab/class.AddPosts.php:266
+#: ../lib/classes/AdminMenuPageTab/class.AddTerms.php:241
+msgid "Slugs"
+msgstr "Slugs"
+
+#: ../lib/classes/AdminMenuPageTab/class.AddPosts.php:267
+msgid ""
+"Slugs will be automatically generated if they are not manually set, but it "
+"is also possible to enter specific slugs for each post. You can do this by "
+"putting the slugs in the right textbox on the lines of that textbox "
+"corresponding with the lines in the left textbox (for the post paths). "
+"Please note that the slug entered is used for the last post in the "
+"hierarchy, separating slugs with slashes will not have the effect of adding "
+"slugs for multiple posts."
+msgstr ""
+"Slugs worden automatisch gegenereerd als je ze niet zelf instelt, maar het "
+"is ook mogelijk ze zelf te kiezen voor ieder bericht. Je kunt dit doen door "
+"in het rechter tekstvlak op de regel corresponderend met de regel waar de "
+"titel van het bericht staat in het linker tekstvlak de slug in te vullen. De "
+"slug die je invult wordt gebruikt voor het laatste bericht in de hierarchie, "
+"het scheiden van slugs door slashes zorgt er niet voor dat de slugs voor "
+"meerdere berichten uit de hierarchie wordt gebruikt!"
+
+#: ../lib/classes/AdminMenuPageTab/class.AddPosts.php:273
+#: ../lib/classes/AdminMenuPageTab/class.AddTerms.php:254
+msgid "Add to parent"
+msgstr "Toevoegen aan ouder"
+
+#: ../lib/classes/AdminMenuPageTab/class.AddPosts.php:290
+msgid "Create inexistent parent posts"
+msgstr "Maak nog niet bestaande ouderberichten aan"
+
+#: ../lib/classes/AdminMenuPageTab/class.AddPosts.php:294
+msgid ""
+"When specifying post parents by using the slash (<code>/</code>) symbol, you "
+"can use this option to create parent posts that do not exist yet."
+msgstr ""
+"Wanneer je ouderberichten aangeeft door middel van de slash (<code>/</code>) "
+"kan je deze optie gebruiken om ouderberichten aan te maken die nog niet "
+"bestaan."
+
+#: ../lib/classes/AdminMenuPageTab/class.AddPosts.php:297
+msgid ""
+"For example, if you enter <code>Cities/Leiden</code> and the post &quot;"
+"Cities&quot; does not exist yet, leaving the box unchecked will skip the "
+"post (thus adding neither &quot;Cities&quot; nor &quot;Leiden&quot;) whilst "
+"checking the box will create both &quot;Cities&quot; and &quot;Leiden&quot;."
+msgstr ""
+"Als je bijvoorbeeld <code>Steden/Leiden</code> invult en het bericht &quot;"
+"Steden&quot; bestaat nog niet, dan zorgt het niet aanvinken van de checkbox "
+"ervoor dat het bericht en zijn ouder niet worden toegevoegd, waar het "
+"aanvinken van de checkbox ervoor zorgt dat er een bericht &quot;Steden&quot; "
+"wordt aangemaakt met een kindbericht &quot;Leiden&quot;."
+
+#: ../lib/classes/AdminMenuPageTab/class.AddPosts.php:303
+msgid "Add posts"
+msgstr "Berichten toevoegen"
+
+#: ../lib/classes/AdminMenuPageTab/class.AddTerms.php:13
+msgid "Add Terms"
+msgstr "Terms toevoegen"
+
+#: ../lib/classes/AdminMenuPageTab/class.AddTerms.php:40
+msgid "You have not specified a valid taxonomy."
+msgstr "Je hebt geen geldige taxonomy gespecificeerd."
+
+#: ../lib/classes/AdminMenuPageTab/class.AddTerms.php:156
+#, php-format
+msgid "Error adding term &quot;%s&quot;."
+msgstr "Fout bij het toevoegen van &quot;%s&quot;."
+
+#: ../lib/classes/AdminMenuPageTab/class.AddTerms.php:178
+#, php-format
+msgid "%d term successfully added."
+msgid_plural "%d terms successfully added."
+msgstr[0] "%d term toegevoegd."
+msgstr[1] "%d terms toegevoegd."
+
+#: ../lib/classes/AdminMenuPageTab/class.AddTerms.php:215
+msgid "Taxonomy"
+msgstr "Taxonomy"
+
+#: ../lib/classes/AdminMenuPageTab/class.AddTerms.php:233
+msgid ""
+"Enter the terms you want to add in the left textbox, separating different "
+"terms by newlines. You can assign categories to parent terms by entering the "
+"full term path, separating different term names by slashes (<code>/</code>)."
+msgstr ""
+"Voer de termtitels in van de terms die je wil toevoegen in het linker "
+"tekstvlak, waarbij je verschillende terms scheidt door middel van een nieuwe "
+"regel. Je kunt terms toekennen aan een ouder door het volledige termpad in "
+"te vullen, waarbij je verschillende termtitels scheidt door slashes (<code>/"
+"</code>)."
+
+#: ../lib/classes/AdminMenuPageTab/class.AddTerms.php:234
+msgid ""
+"If you need a slash in your actual term name, you can escape it by "
+"prepending it with a backslash. For example, &quot;Audio/Video&quot; will "
+"add a term &quot;Audio&quot; with a child term &quot;Video&quot;, whilst "
+"&quot;Audio\\/Video&quot; will add a term &quot;Audio/Video&quot;."
+msgstr ""
+"Als je een slash in je posttitel wilt gebruiken kan je hem &quot;"
+"escapen&quot; door er een backslash (<code>\\</code>) voor te zetten. Zo "
+"voegt &quot;Audio/Video&quot; bijvoorbeeld een term &quot;Audio&quot; met "
+"kind &quot;Video&quot; toe, terwijl &quot;Audio\\/Video&quot; &eacute;"
+"&eacute;n term toevoegt met als titel &quot;Audio/Video&quot;."
+
+#: ../lib/classes/AdminMenuPageTab/class.AddTerms.php:242
+msgid ""
+"Slugs will be automatically generated if they are not manually set, but it "
+"is also possible to enter specific slugs for each term. You can do this by "
+"putting the slugs in the right textbox on the lines of that textbox "
+"corresponding with the lines in the left textbox (for the term paths). "
+"Please note that the slug entered is used for the last term in the "
+"hierarchy, separating slugs with slashes will not have the effect of adding "
+"slugs for multiple terms."
+msgstr ""
+"Slugs worden automatisch gegenereerd als je ze niet zelf instelt, maar het "
+"is ook mogelijk ze zelf te kiezen voor iedere term. Je kunt dit doen door in "
+"het rechter tekstvlak op de regel corresponderend met de regel waar de titel "
+"van de term staat in het linker tekstvlak de slug in te vullen. De slug die "
+"je invult wordt gebruikt voor de laatste term in de hierarchie, het scheiden "
+"van slugs door slashes zorgt er niet voor dat de slugs voor meerdere terms "
+"uit de hierarchie wordt gebruikt!"
+
+#: ../lib/classes/AdminMenuPageTab/class.AddTerms.php:246
+msgid ""
+"<strong>Note:</strong> This taxonomy is non-hierarchical, meaning there can "
+"be no parent-child relationship between terms. Term hierarchy indicated by "
+"the slash (<code>/</code>) symbol will be ignored. This means, for example, "
+"that &quot;Cities/Leiden&quot; will ignore &quot;Cities&quot; and only add "
+"&quot;Leiden&quot;."
+msgstr ""
+"<strong>Let op:</strong> Dit berichttype is niet-hierarchiesch, wat inhoudt "
+"dat er geen ouder-kind-relaties kunnen bestaan tussen terms. Term-hierarchie "
+"aangegeven door de slash (<code>/</code>) wordt genegeerd. Dit betekent "
+"bijvoorbeeld dat &quot;Steden/Leiden&quot; de term &quot;Steden&quot; "
+"negeert en alleen de term &quot;Leiden&quot; toevoegt."
+
+#: ../lib/classes/AdminMenuPageTab/class.AddTerms.php:249
+#, php-format
+msgid ""
+"You can add example data to the text boxes by %sclicking here%s. The example "
+"data will be prepended to the current data."
+msgstr ""
+"Je kunt voorbeelddata toevoegen aan de tekstvlakken door %shier te klikken"
+"%s. De voorbeelddata wordt voor de huidige dat in de tekstvelden gezet."
+
+#: ../lib/classes/AdminMenuPageTab/class.AddTerms.php:274
+msgid "Create inexistent parent terms"
+msgstr "Maak nog niet bestaande oudertermsaan"
+
+#: ../lib/classes/AdminMenuPageTab/class.AddTerms.php:278
+msgid ""
+"When specifying term parents by using the slash (<code>/</code>) symbol, you "
+"can use this option to create parent terms that do not exist yet."
+msgstr ""
+"Wanneer je ouderterms aangeeft door middel van de slash (<code>/</code>) kan "
+"je deze optie gebruiken om ouderterms aan te maken die nog niet bestaan."
+
+#: ../lib/classes/AdminMenuPageTab/class.AddTerms.php:281
+msgid ""
+"For example, if you enter <code>Cities/Leiden</code> and the term &quot;"
+"Cities&quot; does not exist yet, leaving the box unchecked will skip the "
+"term (thus adding neither &quot;Cities&quot; nor &quot;Leiden&quot;) whilst "
+"checking the box will create both &quot;Cities&quot; and &quot;Leiden&quot;."
+msgstr ""
+"Als je bijvoorbeeld <code>Steden/Leiden</code> invult en de term &quot;"
+"Steden&quot; bestaat nog niet, dan zorgt het niet aanvinken van de checkbox "
+"ervoor dat het term en zijn ouder niet worden toegevoegd, waar het aanvinken "
+"van de checkbox ervoor zorgt dat er een term &quot;Steden&quot; wordt "
+"aangemaakt met een kindterm &quot;Leiden&quot;."
+
+#: ../lib/classes/AdminMenuPageTab/class.AddTerms.php:287
+msgid "Add terms"
+msgstr "Terms toevoegen"
+
+#: ../lib/classes/AdminMenuPageTab/class.ReorganizeTerms.php:13
+msgid "Reorganize Terms"
+msgstr "Terms herorganizeren"
+
+#: ../lib/classes/AdminMenuPageTab/class.ReorganizeTerms.php:47
+#, php-format
+msgid "%s hierarchy successfully updated."
+msgstr "Hierarchie van %s succesvol aangepast."
+
+#: ../lib/classes/AdminMenuPageTab/class.ReorganizeTerms.php:76
+msgid "Comfortable"
+msgstr "Comfortabel"
+
+#: ../lib/classes/AdminMenuPageTab/class.ReorganizeTerms.php:77
+msgid "Cozy"
+msgstr "Knus"
+
+#: ../lib/classes/AdminMenuPageTab/class.ReorganizeTerms.php:78
+msgid "Compact"
+msgstr "Compact"
+
+#: ../lib/classes/AdminMenuPageTab/class.ReorganizeTerms.php:85
+msgid ""
+"<strong>Note:</strong> You have unsaved changes. Click the &quot;Save "
+"changes&quot; button below to finalize your changes."
+msgstr ""
+"<strong>Let op:</strong> Je hebt aanpassingen gemaakt en die zijn nog niet "
+"opgeslagen. Klik op de &quot;Wijzigingen opslaan&quot;-knop om de "
+"wijzigingen definitief te maken."
+
+#: ../lib/classes/Walker/class.TermsHierarchy.php:34
+msgid "Deleted"
+msgstr "Verwijderd"
+
+#: ../lib/classes/Walker/class.TermsHierarchy.php:44
+msgid "Cancel"
+msgstr "Herstel"
+
+#~ msgid ""
+#~ "No users have been assigned the &quot;Developer&quot; role yet. Until you "
+#~ "do so, the functionality of the Developer Mode plugin will be limited. "
+#~ "Please go to the %s page and assign the developer role to a user, or "
+#~ "%spromote yourself%s to &quot;Developer&quot;."
+#~ msgstr ""
+#~ "Er zijn nog geen gebruikers met de &quot;Ontwikkelaar&quot;-"
+#~ "gebruikersrol. Tot je iemand deze rol toewijst is de functionaliteit van "
+#~ "de Developer Mode plugin gelimiteerd. Ga aub naar de %s-pagina en geef "
+#~ "een gebruiker de ontwikkelaarsgebruikersrol of %spromoveer jezelf%s tot "
+#~ "&quot;Ontwikkelaar&quot;."
+
+#~ msgid "Users"
+#~ msgstr "Gebruikers"
+
+#~ msgid "Promote"
+#~ msgstr "Promoveer"
+
+#~ msgid "Developer Mode: Admin Menu"
+#~ msgstr "Developer Mode: Adminmenu"
+
+#~ msgid "Admin Menu"
+#~ msgstr "Adminmenu"
+
+#~ msgid "The hidden menu items were successfully updated."
+#~ msgstr "De verborgen menu-items zijn succesvol ge&euml;pdatet."
+
+#~ msgid "Refresh"
+#~ msgstr "Herladen"
+
+#~ msgid "Menu item visibility"
+#~ msgstr "Zichtbaarheid menu-items"
+
+#~ msgid ""
+#~ "You have the option to hide menu items from being displayed when a non-"
+#~ "developer is logged in. Please check the boxes for the pages that you "
+#~ "want to hide when anybody outside the Developer user group (for example, "
+#~ "your client) is logged in."
+#~ msgstr ""
+#~ "Je hebt de mogelijkheid bepaalde menu-items in het adminpaneel niet weer "
+#~ "te geven wanneer iemand die geen ontwikkelaar is ingelogd is. Vink aub de "
+#~ "menu-items aan die je wilt verbergen wanneer iemand die niet de "
+#~ "gebruikersrol \"Ontwikkelaar\" heeft (je klant bijvoorbeeld) is ingelogd."
+
+#~ msgid "Developer Mode Settings"
+#~ msgstr "Developer Mode Instellingen"
+
+#~ msgid "Developer Mode"
+#~ msgstr "Developer Mode"
+
+#~ msgid "Updates"
+#~ msgstr "Updates"
+
+#~ msgid "Disable core update"
+#~ msgstr "Core-updates uitschakelen"
+
+#~ msgid "Disable plugin update"
+#~ msgstr "Pluginupdates uitschakelen"
+
+#~ msgid "Disable theme update"
+#~ msgstr "Theme-updates uitschakelen"
+
+#~ msgid "Developer Mode: Settings"
+#~ msgstr "Developer Mode: Instellingen"
+
+#~ msgid ""
+#~ "Disable general functionalities for any user that doesn&#39;t have "
+#~ "developer access below."
+#~ msgstr ""
+#~ "Schakel algemene functionaliteiten uit voor gebruikers die niet geen "
+#~ "ontwikkelaarstoegang hebben."
+
+#~ msgid "Developer Mode: Plugins"
+#~ msgstr "Developer Mode: Plugins"
+
+#~ msgid "Plugins"
+#~ msgstr "Plugins"
+
+#~ msgid "The hidden plugins were successfully updated."
+#~ msgstr "De verborgen plugins zijn succesvol ge&euml;pdatet."
+
+#~ msgid "Plugin visibility"
+#~ msgstr "Zichtbaarheid plugins"
+
+#~ msgid ""
+#~ "You have the option to hide plugins from being displayed on the plugins "
+#~ "page when a non-developer is logged in. Please check the boxes for the "
+#~ "plugins that you want to hide from the plugin overview when anybody "
+#~ "outside the Developer user group (for example, your client) is logged in."
+#~ msgstr ""
+#~ "Je hebt de mogelijkheid bepaalde plugins niet weer te geven op de "
+#~ "pluginpagina wanneer iemand die geen ontwikkelaar is ingelogd is. Vink "
+#~ "aub de plugins aan die je wilt verbergen wanneer iemand die niet de "
+#~ "gebruikersrol \"Ontwikkelaar\" heeft (je klant bijvoorbeeld) is ingelogd."
+
+#~ msgid "Developer Mode: Promote Self"
+#~ msgstr "Developer Mode: Promoveer jezelf"
+
+#~ msgid "Promote to Developer"
+#~ msgstr "Promoveer naar Ontwikkelaar"
+
+#~ msgid ""
+#~ "You have been successfully promoted to &quot;Developer&quot;. The "
+#~ "Developer Mode plugin is now fully functional."
+#~ msgstr ""
+#~ "Je bent gepromoveerd tot &quot;Ontwikkelaar&quot;. De Developer Mode "
+#~ "plugin is nu helemaal functioneel."
+
+#~ msgid ""
+#~ "The hidden menu items were successfully updated. You will need to "
+#~ "%srefresh%s the page to see the changes."
+#~ msgstr ""
+#~ "De verborgen menu-items zijn succesvol ge&euml;pdatet. Je moet de pagina "
+#~ "%sverversen%s om de veranderingen te zien."
+
+#~ msgid "Developer Mode: AdminMenu"
+#~ msgstr "Developer Mode: Adminmenu"
+
+#~ msgid "Gravity Forms: Form"
+#~ msgstr "Gravity Forms: Formulier"
+
+#~ msgid ""
+#~ "This plugin requires Gravity Forms. It appears that Gravity Forms is not "
+#~ "installed."
+#~ msgstr ""
+#~ "Deze plugin vereist dat Gravity Forms ge&iuml;nstalleerd is. Het lijkt "
+#~ "erop dat dat niet het geval is."
+
+#~ msgid "There are no forms available."
+#~ msgstr "Er zijn geen formulieren beschikbaar."
+
+#~ msgid "Please select a form"
+#~ msgstr "Selecteer een formulier"
+
+#~ msgid "Edit %s"
+#~ msgstr "Pas %s aan"
+
+#~ msgid "New %s"
+#~ msgstr "Nieuwe %s"
+
+#~ msgid "View %s"
+#~ msgstr "Bekijk %s"
+
+#~ msgid "Search %s"
+#~ msgstr "Zoek %s"
+
+#~ msgid "No %s found."
+#~ msgstr "Geen %s gevonden."
+
+#~ msgid "No %s found in Trash."
+#~ msgstr "Geen %s gevonden in Prullenbak."
+
+#~ msgid "Parent %s:"
+#~ msgstr "Hoofd %s:"
+
+#~ msgid "All %s"
+#~ msgstr "Alle %s"
+
+#~ msgid "Text input"
+#~ msgstr "Tekstinput"
+
+#~ msgid "Text box"
+#~ msgstr "Tekstvlak"
+
+#~ msgid "Radio buttons"
+#~ msgstr "Radio buttons"
+
+#~ msgid "Single checkbox"
+#~ msgstr "Enkele checkbox"
+
+#~ msgid "Checkbox list"
+#~ msgstr "Checkboxlijst"
+
+#~ msgid "(required)"
+#~ msgstr "(verplicht)"
+
+#~ msgid "Document overview"
+#~ msgstr "Overzicht"
+
+#~ msgid ""
+#~ "Below, you will find an overview of the generated document. If the "
+#~ "information is correct, you can proceed to the payment by pressing the "
+#~ "&quot;Proceed to payment&quot; button. If anything is incorrect, you can "
+#~ "return to the document generator by pressing the &quot;back&quot; button. "
+#~ "Caution: using the back button in your browser may result in data loss."
+#~ msgstr ""
+#~ "Hieronder vindt u een overzicht van het gegenereerde document. Indien de "
+#~ "informatie correct is kunt u doorgaan naar de betaling door op de &quot;"
+#~ "Naar betaling&quot;-knop te drukken. Als bepaalde gegevens niet kloppen "
+#~ "kunt u teruggaan naar de documentgenerator door op de &quot;terug&quot;-"
+#~ "knop te klikken. Let op: het gebruik van de back-knop in uw browser kan "
+#~ "tot dataverlies leiden."
+
+#~ msgid ""
+#~ "Your document is begin generated... You will be redirected to the order "
+#~ "page."
+#~ msgstr ""
+#~ "Uw document wordt genereerd... U wordt doorgestuurd naar de bestelpagina."
+
+#~ msgid ""
+#~ "If you are not automatically redirected, please click <a href='%s' "
+#~ "title=''>here</a>."
+#~ msgstr ""
+#~ "Indien u niet automatisch doorgestuurd wordt, klik dan <a href='%s' "
+#~ "title=''>hier</a>."
+
+#~ msgid "<span class='jwdocgen-errors-count'>%d</span> errors occured."
+#~ msgstr ""
+#~ "U heeft <span class='jwdocgen-errors-count'>%d</span> verplichte vragen "
+#~ "niet ingevuld."
+
+#~ msgid "<span class='jwdocgen-errors-count'>%d</span> error occured."
+#~ msgstr ""
+#~ "U heeft <span class='jwdocgen-errors-count'>%d</span> verplichte vraag "
+#~ "niet ingevuld."
+
+#~ msgid ""
+#~ "Step <span class='jwdocgen-progress-current'>%d</span>/<span "
+#~ "class='jwdocgen-progress-total'>%d</span>"
+#~ msgstr ""
+#~ "Stap <span class='jwdocgen-progress-current'>%d</span>/<span "
+#~ "class='jwdocgen-progress-total'>%d</span>"
+
+#~ msgid "Back"
+#~ msgstr "Terug"
+
+#~ msgid "&laquo; Back"
+#~ msgstr "&laquo; Terug"
+
+#~ msgid "Proceed"
+#~ msgstr "Verder"
+
+#~ msgid "Proceed &raquo;"
+#~ msgstr "Verder &raquo;"
+
+#~ msgid "Complete &raquo;"
+#~ msgstr "Afronden &raquo;"
+
+#~ msgid "Coupons"
+#~ msgstr "Coupons"
+
+#~ msgid "Document Generator Preview"
+#~ msgstr "Documentgenerator Voorbeeld"
+
+#~ msgid "Preview"
+#~ msgstr "Voorbeeld"
+
+#~ msgid "The document generator does not exist."
+#~ msgstr "De documentgenerator bestaat niet."
+
+#~ msgid "Document Generators"
+#~ msgstr "Document-generatoren"
+
+#~ msgid "Generators"
+#~ msgstr "Generatoren"
+
+#~ msgid "There was an error creating the new generator page."
+#~ msgstr ""
+#~ "Er heeft zich een fout voorgedaan bij het aanmaken van de nieuwe "
+#~ "generatorstap."
+
+#~ msgid ""
+#~ "Warning: the fields &quot;%s&quot; and &quot;%s&quot; have the same "
+#~ "label. Until this issue is resolved, the generator might not function "
+#~ "properly."
+#~ msgstr ""
+#~ "Let op: de vragen &quot;%s&quot; en &quot;%s&quot; hebben hetzelfde "
+#~ "label. Totdat dit probleem opgelost is, kan het zijn dat de generator "
+#~ "niet juist functioneert."
+
+#~ msgid ""
+#~ "Warning: the field &quot;%s&quot; has no label yet. Until a label is set "
+#~ "for this field, it can not be used by the generator, and the generator "
+#~ "might not function properly."
+#~ msgstr ""
+#~ "Let op: de vraag &quot;%s&quot; heeft nog geen label. Totdat dit veld een "
+#~ "label heeft kan het niet gebruikt worden door de generator en kan het "
+#~ "zijn dat de generator niet juist functioneert."
+
+#~ msgid "You have not created any document generators yet."
+#~ msgstr "Je hebt nog geen documentgeneratoren aangemaakt."
+
+#~ msgid "Payment enabled"
+#~ msgstr "Betaling ingeschakeld"
+
+#~ msgid "Payment disabled"
+#~ msgstr "Betaling uitgeschakeld"
+
+#~ msgid "%d template file"
+#~ msgid_plural "%d template files"
+#~ msgstr[0] "%d templatefile"
+#~ msgstr[1] "%d templatefiles"
+
+#~ msgid "%d order"
+#~ msgid_plural "%d orders"
+#~ msgstr[0] "%d bestelling"
+#~ msgstr[1] "%d bestellingen"
+
+#~ msgid "View all orders"
+#~ msgstr "Alle bestellingen bekijken"
+
+#~ msgid "%d coupon"
+#~ msgid_plural "%d coupons"
+#~ msgstr[0] "%d coupon"
+#~ msgstr[1] "%d coupons"
+
+#~ msgid "View all coupons"
+#~ msgstr "Alle coupons bekijken"
+
+#~ msgid "Pages and fields"
+#~ msgstr "Stappen en vragen"
+
+#~ msgid "(no title)"
+#~ msgstr "(geen titel)"
+
+#~ msgid "Create page"
+#~ msgstr "Stap aanmaken"
+
+#~ msgid "Advanced"
+#~ msgstr "Geavanceerd"
+
+#~ msgid "Show trashed/draft pages and fields"
+#~ msgstr "Laat prullenback-/conceptstappen en -vragen zien"
+
+#~ msgid "WordPress native mange screen"
+#~ msgstr "WordPress native beheerscherm"
+
+#~ msgid "Orders"
+#~ msgstr "Bestellingen"
+
+#~ msgid "New Document Generator"
+#~ msgstr "Nieuwe Documentgenerator"
+
+#~ msgid "Document ordered e-mail"
+#~ msgstr "Documentbestelling e-mail"
+
+#~ msgid "Payment failed e-mail"
+#~ msgstr "Betaling mislukt e-mail"
+
+#~ msgid "Document Generator Options"
+#~ msgstr "Opties documentgenerator"
+
+#~ msgid "Customer"
+#~ msgstr "Klant"
+
+#~ msgid "Company name"
+#~ msgstr "Bedrijfsnaam"
+
+#~ msgid "Address"
+#~ msgstr "Adres"
+
+#~ msgid "Zipcode"
+#~ msgstr "Postcode"
+
+#~ msgid "City"
+#~ msgstr "Stad"
+
+#~ msgid "Contact person"
+#~ msgstr "Contactpersoon"
+
+#~ msgid "E-mail address"
+#~ msgstr "E-mailadres"
+
+#~ msgid "Coupon"
+#~ msgstr "Coupon"
+
+#~ msgid "Generate"
+#~ msgstr "Genereren"
+
+#~ msgid "Generate random coupon code"
+#~ msgstr "Willekeurige couponcode genereren"
+
+#~ msgid "Document generator"
+#~ msgstr "Documentgenerator"
+
+#~ msgid "Unassigned"
+#~ msgstr "Niet toegekend"
+
+#~ msgid "Document Generator"
+#~ msgstr "Documentgenerator"
+
+#~ msgid "Document Generator Page"
+#~ msgstr "Generatorstap"
+
+#~ msgid "Document generator page"
+#~ msgstr "Generatorstap"
+
+#~ msgid "Field"
+#~ msgstr "Vraag"
+
+#~ msgid ""
+#~ "Error: The label you are trying to use is already used by another field "
+#~ "(%s). The field label was not changed."
+#~ msgstr ""
+#~ "Fout: Het label dat je probeert to gebruiken is al in gebruik door een "
+#~ "andere vraag (%s). De aanpassing van het vraaglabel is niet doorgevoerd."
+
+#~ msgid "Field label"
+#~ msgstr "Vraaglabel"
+
+#~ msgid ""
+#~ "The field label is used to identify the field. If the field label is "
+#~ "empty, the field will not be used in the generator. The field label has "
+#~ "to be unique across its generator."
+#~ msgstr ""
+#~ "Het vraaglabel wordt gebruikt om het veld te identificeren. Als het "
+#~ "vraaglabel leeg is kan de generator het vraag niet gebruiken. Het "
+#~ "vraaglabel moet binnen de generator uniek zijn."
+
+#~ msgid "Required field"
+#~ msgstr "Verplichte vraag"
+
+#~ msgid "Default value"
+#~ msgstr "Standaardwaarde"
+
+#~ msgid "Dependencies"
+#~ msgstr "Dependencies"
+
+#~ msgid "Field dependency enabled"
+#~ msgstr "Maak vraag afhankelijk van andere vraag"
+
+#~ msgid "Only display this field if another field has a certain value."
+#~ msgstr "Stel deze vraag afhankelijk van onderstaande vraag"
+
+#~ msgid ""
+#~ "Select the dependency field, and enter the required value of that field. "
+#~ "For more information, view the help tab."
+#~ msgstr ""
+#~ "Selecteer de dependencyvraag en voer de gewenste waarde van het antwoord "
+#~ "op die vraag in. Bekijk voor meer informatie de helptab."
+
+#~ msgid "Separate multiple possible values by newlines."
+#~ msgstr ""
+#~ "Scheid meerdere toegestane waarden door middel van een nieuwe regel."
+
+#~ msgid ""
+#~ "Select the field that this field should be dependent on in the dropdown "
+#~ "menu, and enter the value (or label, in case of a multi-select field) the "
+#~ "dependency field should have in order for this field to be displayed."
+#~ msgstr ""
+#~ "Selecteer in het dropdownmenu de vraag waar deze vraag van afhankelijk "
+#~ "zou moeten zijn, en voer de waarde (of de optiewaarde, in het geval van "
+#~ "een multi-input veld zoals een checkboxlijst) in die het antwoord op de "
+#~ "vraag moet hebben om deze vraag weer te geven."
+
+#~ msgid ""
+#~ "Separate multiple values that make this field visible by separating the "
+#~ "values using newlines (used for radio inputs)."
+#~ msgstr ""
+#~ "Scheid meerdere waarden die deze vraag zichtbaar maken door middel van "
+#~ "nieuwe regels."
+
+#~ msgid "Field Options"
+#~ msgstr "Antwoorden"
+
+#~ msgid "Value"
+#~ msgstr "Waarde"
+
+#~ msgid "Text label"
+#~ msgstr "Tekstlabel"
+
+#~ msgid "Checked"
+#~ msgstr "Aangevinkt"
+
+#~ msgid "New"
+#~ msgstr "Nieuw"
+
+#~ msgid "Add new field option"
+#~ msgstr "Nieuwe optie toevoegen"
+
+#~ msgid "Field Type"
+#~ msgstr "Vraagtype"
+
+#~ msgid "Order"
+#~ msgstr "Bestelling"
+
+#~ msgid "Unique order identifier"
+#~ msgstr "Unieke bestellingscode"
+
+#~ msgid "Extra work needed"
+#~ msgstr "Meerwerk gevraagd"
+
+#~ msgid "Order overview template"
+#~ msgstr "Template bestellingsoverzicht"
+
+#~ msgid "Payment"
+#~ msgstr "Betaling"
+
+#~ msgid "Payment method"
+#~ msgstr "Betalingsmethode"
+
+#~ msgid "Status"
+#~ msgstr "Status"
+
+#~ msgid "Generated on %s by %s"
+#~ msgstr "Gegenereerd op %s door %s"
+
+#~ msgid "Ordered on %s by %s"
+#~ msgstr "Besteld op %s door %s"
+
+#~ msgid "Payment failed on %s by %s"
+#~ msgstr "Betaling mislukt op %s door %s"
+
+#~ msgid "Paid on %s by %s"
+#~ msgstr "Betaald op %s door %s"
+
+#~ msgid "Page dependency enabled"
+#~ msgstr "Maak stap afhankelijk van andere vraag"
+
+#~ msgid "Only display this page if a certain field has a certain value."
+#~ msgstr "Toon deze stap afhankelijk van de vraag hieronder"
+
+#~ msgid ""
+#~ "Select the field that this page should be dependent on in the dropdown "
+#~ "menu, and enter the value (or label, in case of a multi-select field) the "
+#~ "dependency field should have in order for this page to be displayed."
+#~ msgstr ""
+#~ "Selecteer in het dropdownmenu het veld waar deze vraag van afhankelijk "
+#~ "zou moeten zijn, en voer de waarde (of de optiewaarde, in het geval van "
+#~ "een multi-input veld zoals een checkboxlijst) in die het antwoord op de "
+#~ "vraag moet hebben om deze stap weer te geven."
+
+#~ msgid ""
+#~ "Separate multiple values that make this page visible by separating the "
+#~ "values using newlines (used for radio inputs)."
+#~ msgstr ""
+#~ "Scheid meerdere waarden die deze stap zichtbaar maken door middel van "
+#~ "nieuwe regels."
+
+#~ msgid "Payment amount:"
+#~ msgstr "Bedrag:"
+
+#~ msgid "Ex. VAT"
+#~ msgstr "Ex. BTW"
+
+#~ msgid "Single Checkbox"
+#~ msgstr "Enkele checkbox"
+
+#~ msgid "Checked by default"
+#~ msgstr "Standaard aangevinkt"
+
+#~ msgid "Template Files"
+#~ msgstr "Templatefiles"
+
+#~ msgid ""
+#~ "The RTF template files are listed here. The default template file can be "
+#~ "selected by selecting it using the radio buttons."
+#~ msgstr ""
+#~ "De RTF-templatefiles staan hieronder weergegeven. De standaard-"
+#~ "templatefile kan geselecteerd worden door middel van de radio-buttons."
+
+#~ msgid "File name"
+#~ msgstr "Bestandsnaam"
+
+#~ msgid "Label"
+#~ msgstr "Label"
+
+#~ msgid "Default"
+#~ msgstr "Standaard"
+
+#~ msgid "You have not uploaded any RTF templates yet."
+#~ msgstr "Je hebt nog geen RTF-templates ge&uuml;pload."
+
+#~ msgid "Upload a new template file:"
+#~ msgstr "Nieuwe templatefile uploaden:"
+
+#~ msgid ""
+#~ "Upload RTF template files that can be used to generate the actual RTF "
+#~ "document."
+#~ msgstr ""
+#~ "Upload RTF-templatefiles die gebruikt kunnen worden om het daadwerkelijke "
+#~ "RTF-document te genereren."
+
+#~ msgid ""
+#~ "The default RTF template can be selected by checking the radio box next "
+#~ "to the RTF document you want to be used by default. The selected default "
+#~ "RTF template is used to generate the RTF if no other RTF template is "
+#~ "chosen via the optional generator PHP class."
+#~ msgstr ""
+#~ "Het standaard-RTF-template kan geselecteerd worden door de radiobutton "
+#~ "naast de gewenste standaardtemplate aan te vinken. Het geselecteerde "
+#~ "standaardtemplate wordt gebruiktom de RTF te genereren indien er geen "
+#~ "andere RTF-template gekozen is via de optionele generator PHP-class."
+
+#~ msgid "Please enter a valid zipcode"
+#~ msgstr "Voer a.u.b. een geldige postcode in"
+
+#~ msgid "The prepaid code you entered is invalid."
+#~ msgstr "De ingevulde pre-paidcode is ongeldig."
+
+#~ msgid ""
+#~ "You have not completely filled out the order form. The missing fields are "
+#~ "marked below."
+#~ msgstr ""
+#~ "U heeft het bestelformulier niet compleet ingevuld. De ontbrekende velden "
+#~ "zijn hieronder gemarkeerd."
+
+#~ msgid "Something went wrong"
+#~ msgstr "Er is iets misgegaan."
+
+#~ msgid "The order could not be found, please try again."
+#~ msgstr "De bestelling kon niet gevonden worden, probeer het a.u.b. opnieuw."
+
+#~ msgid "Order sent"
+#~ msgstr "Bestelling verzonden"
+
+#~ msgid ""
+#~ "Your order has been processed. It will be sent to ICTRecht, and we will "
+#~ "contact you soon."
+#~ msgstr ""
+#~ "Uw bestelling is ontvangen. We nemen spoedig contact met u op en sturen u "
+#~ "de factuur op het door u opgegeven e-mailadres."
+
+#~ msgid "Your order has already been processed."
+#~ msgstr "Uw bestelling is al afgehandeld."
+
+#~ msgid ""
+#~ "<strong>Download</strong> your document <a href='%s' "
+#~ "title='Download'>here</a>"
+#~ msgstr ""
+#~ "<a href='%s' title='Download'><strong>Download hier</strong></a> uw "
+#~ "document."
+
+#~ msgid ""
+#~ "You will recieve a confirmation and a copy of the generated document via "
+#~ "e-mail. Your invoice will be e-mailed to you separately within 14 days."
+#~ msgstr ""
+#~ "U ontvangt per e-mail een bevestiging en een kopie van het gegenereerde "
+#~ "document. Uw factuur wordt separaat gemaild binnen 14 dagen, indien van "
+#~ "toepassing."
+
+#~ msgid "Your will be e-mailed about your requested additional work."
+#~ msgstr "U wordt binnenkort door ons benaderd over het gevraagde meerwerk."
+
+#~ msgid ""
+#~ "Should you have any questions about the document, do not hesitate to "
+#~ "contact us. Please include your order number <strong>%s</strong> in your "
+#~ "message."
+#~ msgstr ""
+#~ "Heeft u vragen over het document, aarzelt u dan niet contact met ons op "
+#~ "te nemen. Vermeld dan uw bestelcode <strong>%s</strong>."
+
+#~ msgid "Order successful!"
+#~ msgstr "Bestelling succesvol!"
+
+#~ msgid ""
+#~ "Thank you for your order. Your payment using a coupon code was successful."
+#~ msgstr ""
+#~ "Bedankt voor uw bestleling. Uw betaling door middel van een pre-paidcode "
+#~ "is gelukt."
+
+#~ msgid "Thank you for your order."
+#~ msgstr "Bedankt voor uw bestelling."
+
+#~ msgid "Thank you for your order. Your payment was successful."
+#~ msgstr "Bedankt voor uw bestelling. De betaling is gelukt."
+
+#~ msgid "Payment failed"
+#~ msgstr "Betaling mislukt"
+
+#~ msgid "Something went wrong processing your payment."
+#~ msgstr ""
+#~ "Onze excuses, er is iets foutgegaan bij het afhandelen van uw betaling."
+
+#~ msgid ""
+#~ "Please contact us for help with your payment. Please include your order "
+#~ "reference (%s) in your message."
+#~ msgstr ""
+#~ "Neem a.u.b. contact met ons op voor hulp bij uw betaling. Noem in uw "
+#~ "bericht graag uw unieke bestellingscode (%s)."
+
+#~ msgid "Payment via %s"
+#~ msgstr "Betaling via %s"
+
+#~ msgid ""
+#~ "You are not leaving our website to complete the payment at our payment "
+#~ "provider. One moment please."
+#~ msgstr ""
+#~ "U verlaat nu onze website om de betaling te voldoen bij onze payment "
+#~ "provider. Een moment geduld a.u.b."
+
+#~ msgid "Payment request sent"
+#~ msgstr "Betalingsverzoek verzonden"
+
+#~ msgid "You have received an e-mail with further payment instructions."
+#~ msgstr "U heeft een e-mail ontvangen met verdere betaalinstructies."
+
+#~ msgid "Your payment was successful!"
+#~ msgstr "Uw bestelling is afgehandeld!"
+
+#~ msgid ""
+#~ "Your payment was successfully processed. The generated document has been "
+#~ "sent to you by e-mail."
+#~ msgstr ""
+#~ "Uw betaling is succesvol afgehandeld. Het gegenereerde document is naar u "
+#~ "verzonden per e-mail."
+
+#~ msgid ""
+#~ "You can also download the generated document by clicking <a href='%s' "
+#~ "title='Download'>here</a>."
+#~ msgstr ""
+#~ "U kunt het gegenereerde document ook downloaden door <a href='%s' "
+#~ "title='Downloaden'>hier</a> te klikken."
+
+#~ msgid "Order %s by %s (%s)"
+#~ msgstr "Afname %s door %s (%s)"
+
+#~ msgid "Document Coupons"
+#~ msgstr "Coupons"
+
+#~ msgid "Document Coupon"
+#~ msgstr "Coupon"
+
+#~ msgid "All coupons"
+#~ msgstr "Alle coupons"
+
+#~ msgid "New coupon"
+#~ msgstr "Nieuwe coupon"
+
+#~ msgid "All generators"
+#~ msgstr "Alle generatoren"
+
+#~ msgid "New generator"
+#~ msgstr "Nieuwe generator"
+
+#~ msgid "Content"
+#~ msgstr "Inhoud"
+
+#~ msgid ""
+#~ "The content field is used for general information about the generator, "
+#~ "which will be displayed on every page of the generator."
+#~ msgstr ""
+#~ "Het contentvlak wordt gebruikt voor algemene informatie over de "
+#~ "generator, die weergegeven wordt bij elke stap van de generator."
+
+#~ msgid "Document Generator Fields"
+#~ msgstr "Vragen"
+
+#~ msgid "Document Generator Field"
+#~ msgstr "Vraag"
+
+#~ msgid "All fields"
+#~ msgstr "Alle vragen"
+
+#~ msgid "New field"
+#~ msgstr "Nieuwe vraag"
+
+#~ msgid ""
+#~ "The content field is used to add additional information about a field, "
+#~ "which is mainly useful if the title of the field is not sufficient to "
+#~ "explain all functionality of the field."
+#~ msgstr ""
+#~ "Het contentvlak wordt gebruikt om additionele informatie weer te geven "
+#~ "bij een vraag, wat vooral handig is als de titel van de vraag niet "
+#~ "afdoende is om alle functionaliteit van de vraag uit te leggen."
+
+#~ msgid "Document Generator Pages"
+#~ msgstr "Generatorstappen"
+
+#~ msgid "All pages"
+#~ msgstr "Alle stappen"
+
+#~ msgid "New page"
+#~ msgstr "Nieuwe stap"
+
+#~ msgid ""
+#~ "The content field is used for general information about the generator "
+#~ "page, which will be displayed right above the main generator content."
+#~ msgstr ""
+#~ "Het contentvlak wordt gebruikt voor algemene informatie over de stap, die "
+#~ "direct boven de vragen van de stap wordt weergegeven"
+
+#~ msgid "Document Orders"
+#~ msgstr "Documentbestellingen"
+
+#~ msgid "Document Order"
+#~ msgstr "Documentbestelling"
+
+#~ msgid "All orders"
+#~ msgstr "Alle bestellingen"
+
+#~ msgid "New order"
+#~ msgstr "Nieuwe bestelling"
+
+#~ msgid "Generated"
+#~ msgstr "Gegenereerd"
+
+#~ msgid "Ordered"
+#~ msgstr "Besteld"
+
+#~ msgid "Paid"
+#~ msgstr "Betaald"
+
+#~ msgid "Order identifier"
+#~ msgstr "Unieke bestellingscode"
+
+#~ msgid "Customer company name"
+#~ msgstr "Bedrijfsnaam klant"
+
+#~ msgid ""
+#~ "Your order with a coupon code was successfully processed. The generated "
+#~ "document has been sent to you by e-mail."
+#~ msgstr ""
+#~ "Uw bestelling met uw pre-paidcode is succesvol afgehandeld. Het "
+#~ "gegenereerde document is naar u verzonden per e-mail."
+
+#~ msgid ""
+#~ "Your order was successfully processed. The generated document has been "
+#~ "sent to you by e-mail."
+#~ msgstr ""
+#~ "Uw bestelling is succesvol afgehandeld. Het gegenereerde document is naar "
+#~ "u verzonden per e-mail."
+
+#~ msgid "Order successful"
+#~ msgstr "Bestelling succesvol"
+
+#~ msgid "Payment error"
+#~ msgstr "Betalingsfout"
+
+#~ msgid "Checkbox title"
+#~ msgstr "Checkboxtitel"

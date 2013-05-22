@@ -1,0 +1,3 @@
+{% for index, term in terms %}
+<a href="{{ term.term | build_permalink_for 0 }}">{{ term.term }}</a> <hr color="#d8d8d8" size="1"/> 
+{% endfor%}

@@ -1,0 +1,38 @@
+@media (max-width:760px){img, object{max-width:100%;}
+#wrap{width:95%;}
+ul.dropdown{width:95%;}
+#header{width:100%;height:auto;}
+#container{width:100%;}
+#contents{width:65%;}
+.post{width:100%;}
+#footer{width:100%;}
+#sidebar{width:30%;}
+.video embed{width:100%;height:auto;min-height:200px;}
+#breadchumb{width:100%;}
+#contentimage{height:auto;width:100%;}
+.picnav img{width:20%;}
+#ads{width:100%;}
+}
+@media (max-width:600px){#header{height:auto;}
+#content{width:100%;}
+#container{width:100%;}
+.post{width:100%;}
+#contents{width:96%;}
+#sidebar{width:100%;margin:0;float:none;}
+.video embed, .video object, .video iframe{min-height:250px;}
+#nav a{font-size:90%;}
+}
+@media (max-width:479px){#wrap{width:92%;}
+#container{width:99%;}
+#contents{width:93%;}
+.facebook{width:30%;}
+.twitter{width:32%;}
+.google{width:100px;}
+.social{width:100%;}
+#nav{float:left;width:100%;background-color:#fff;height:auto;margin:3px;padding:0px;text-transform:capitalize;font-size:14px;text-align:center;}
+nav ul{display:none;}
+nav select{display:inline-block;width:80%;height:30px;overflow:hidden;background:#EFEFEF;float:none;font-size:14px;}
+}
+@media screen and (max-width:320px){#container{width:100%;}
+#contents{width:92%;}
+}

@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* General */
+.jwbp-clear { clear: both; }
+
+/* Terms hierarchy */
+.jwbp-termshierarchy { margin: 0; }
+	.jwbp-termshierarchy ul { margin-left: 16px; }
+		.jwbp-termshierarchy li { margin: 4px 0 0 0; padding: 0; list-style-type: none; }
+			.jwbp-termshierarchy .jwbp-container { display: block; position: relative; width: 100%; border: 1px solid #DFDFDF; background: #FCFCFC; }
+				.jwbp-termshierarchy .jwbp-container .jwbp-drag { position: absolute; display: block; width: 30px; height: 100%; top: -1px; left: -1px; border: 1px solid #DFDFDF; border-right-color: 1px solid #999999; cursor: move; background: url('../images/sort.png') no-repeat 0 center transparent; }
+				.jwbp-termshierarchy .jwbp-container .jwbp-drag:hover { background-color: #f2f2f2; background-position: -32px center; }
+				.jwbp-termshierarchy li .jwbp-content { position: relative; margin: 0 0 0 31px; }
+					.jwbp-termshierarchy li .jwbp-content .jwbp-title { text-decoration: none; }
+				.jwbp-termshierarchy li .jwbp-item-overlay { display: none; position: absolute; top: 0px; left: 0px; width: 100%; padding-left: 5px; background: url('../images/helper/opacity/FFFFFF-80.png') repeat 0 0 transparent; text-align: left; }
+					.jwbp-termshierarchy li .jwbp-item-overlay a { text-decoration: none; }
+					.jwbp-termshierarchy li .jwbp-item-overlay span.trash a { color: #bc0b0b; }
+					.jwbp-termshierarchy li .jwbp-item-overlay span.trash a:hover { color: #FF0000; }
+				.jwbp-termshierarchy li .jwbp-container:hover .jwbp-item-overlay { display: block; }
+	.jwbp-termshierarchy .jwbp-placeholder { outline: 1px dashed #95a8bc; }
+
+/* Expand term children */
+.jwbp-container > .jwbp-expand { position: absolute; display: block; top: 0; right: 0; width: 80px; height: 100%; z-index: 10; }
+	.jwbp-container > .jwbp-expand span { display: block; float: right; width: 12px; height: 11px; margin: 11px 8px 11px 0; background: url('../images/expand.png') no-repeat 0 0 transparent; }
+	.jwbp-container > .jwbp-expand:hover span { background-position: -12px 0; }
+	.jwbp-display-cozy .jwbp-container > .jwbp-expand span { margin-top: 8px; }
+	.jwbp-display-compact .jwbp-container > .jwbp-expand span { margin-top: 5px; }
+
+/* Nested sortable */
+.mjs-nestedSortable-expanded > .jwbp-container .jwbp-expand span { background-position: -24px 0; }
+.mjs-nestedSortable-expanded > .jwbp-container .jwbp-expand:hover span { background-position: -36px 0; }
+.jwbp-termshierarchy li.mjs-nestedSortable-collapsed > ul { display: none; }
+.jwbp-termshierarchy li.mjs-nestedSortable-leaf .jwbp-content .jwbp-title { color: #888888; cursor: default; }
+.mjs-nestedSortable-error { background: #fbe3e4; border-color: transparent; }
+
+/* Notices */
+#jwbp-notice-unsavedchanges { display: none; }
+
+/* Forms */
+.jwbp-submit-top { margin: 0 0 12px 0; padding: 0; }
+.jwbp-submit-bottom { margin: 12px 0 0 0; padding: 0; }
+
+/* Display types list */
+.jwbp-listdisplay { margin: 0; padding: 0; }
+	.jwbp-listdisplay li { display: block; float: right; margin: 0 4px 0 0; padding: 0; list-style-type: none; }
+		.jwbp-listdisplay li a { display: block; width: 32px; height: 32px; text-indent: -9999px; background-repeat: no-repeat; background-color: transparent; }
+		.jwbp-listdisplay li a#jwbp-listdisplaytype-comfortable { background-image: url('../images/listdisplay-comfortable.png'); }
+		.jwbp-listdisplay li a#jwbp-listdisplaytype-cozy { background-image: url('../images/listdisplay-cozy.png'); }
+		.jwbp-listdisplay li a#jwbp-listdisplaytype-compact { background-image: url('../images/listdisplay-compact.png'); }
+		.jwbp-listdisplay li a:hover,
+		.jwbp-listdisplay li.current a { background-position: -32px 0; }
+	.jwbp-listdisplay li:first-child { margin-right: 0; }
+
+/* Display types */
+.jwbp-display-comfortable li .jwbp-content { padding: 8px 30px 6px 7px; }
+	.jwbp-display-comfortable li .jwbp-item-overlay { height: 22px; padding-top: 8px; }
+.jwbp-display-cozy li .jwbp-content { padding: 5px 30px 3px 5px; }
+	.jwbp-display-cozy li .jwbp-item-overlay { height: 19px; padding-top: 5px; }
+.jwbp-display-compact li .jwbp-content { padding: 2px 30px 0px 3px; }
+	.jwbp-display-compact li .jwbp-item-overlay { height: 16px; padding-top: 2px; }
+
+/* Future */
+.jwbp-termshierarchy li > .jwbp-container .jwbp-content-deleted { border-color: #f2f2f2; color: #b7b7b7; background-color: #FAFCFE; }
+	.jwbp-termshierarchy li > .jwbp-container .jwbp-content-deleted .jwbp-drag { border-color: #f2f2f2; background-color: #FBFDFE; }
+	.jwbp-termshierarchy li > .jwbp-container .jwbp-content-deleted .jwbp-title em { font-style: italic; color: #FF8262; }
+
+.jwbp-termshierarchy li.jwbp-editing .jwbp-container:hover .jwbp-content { text-align: left; }
+
+.jwbp-termshierarchy li.jwbp-normal > .jwbp-container .jwbp-content-normal { display: block; }
+.jwbp-termshierarchy li.jwbp-normal > .jwbp-container .jwbp-content-deleted { display: none; }
+.jwbp-termshierarchy li.jwbp-normal > .jwbp-container .jwbp-content-edit { display: none; }
+
+.jwbp-termshierarchy li.jwbp-deleted > .jwbp-container .jwbp-content-normal { display: none; }
+.jwbp-termshierarchy li.jwbp-deleted > .jwbp-container .jwbp-content-deleted { display: block; }
+.jwbp-termshierarchy li.jwbp-deleted > .jwbp-container .jwbp-content-edit { display: none; }
+
+.jwbp-termshierarchy li.jwbp-editing > .jwbp-container .jwbp-content-normal { display: none; }
+.jwbp-termshierarchy li.jwbp-editing > .jwbp-container .jwbp-content-deleted { display: none; }
+.jwbp-termshierarchy li.jwbp-editing > .jwbp-container .jwbp-content-edit { display: block; }
+
+/* Add terms */
+.jwbp-addterms-terms td > div { margin-bottom: 10px; }
+	.jwbp-addterms-terms td > div > div { clear: both; }
+	.jwbp-addterms-terms td > div .description { width: 100%; }
+		.jwbp-addterms-terms td > div .description h3 { clear: both; text-align: center; }
+	#jwbp-addterms-terms-titles-container { display: block; float: left; width: 50%; }
+		#jwbp-addterms-terms-titles { width: 95%; height: 250px; }
+	#jwbp-addterms-terms-slugs-container { display: block; float: right; width: 50%; }
+		#jwbp-addterms-terms-slugs { width: 95%; height: 250px; }
+.jwbp-addterms-terms td > div.description { clear: both; }
+
+/* Add posts */
+.jwbp-addposts-posts td > div { margin-bottom: 10px; }
+	.jwbp-addposts-posts td > div > div { clear: both; }
+	.jwbp-addposts-posts td > div .description { width: 100%; }
+		.jwbp-addposts-posts td > div .description h3 { clear: both; text-align: center; }
+	#jwbp-addposts-posts-titles-container { display: block; float: left; width: 50%; }
+		#jwbp-addposts-posts-titles { width: 95%; height: 250px; }
+	#jwbp-addposts-posts-slugs-container { display: block; float: right; width: 50%; }
+		#jwbp-addposts-posts-slugs { width: 95%; height: 250px; }
+.jwbp-addposts-posts td > div.description { clear: both; }
+
+/* Lined textarea */
+.jwbp-lined { background: url('../images/linedtextarea-background.jpg') repeat 0 5px transparent; }
+
+/* General */
+.jwbp-clear { clear: both; }
+.jwbp-hidden { display: none; }

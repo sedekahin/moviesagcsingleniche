@@ -1,0 +1,61 @@
+{% api %}{% image %}{% video %}
+<article class="post-1 post type-post status-publish format-standard hentry category-uncategorized">
+	<div class="post-format-single standard"></div>
+
+	<div class="entry-wrap">
+		<header class="entry-header">
+			<a href="#" class="post-date"></a>
+			<h1 class="entry-title">{{ term | ucwords }}</h1>
+		</header><!--end .entry-header -->
+		
+		<div class="entry-content">
+			<p>
+				{% for index, item in api %}
+				{% if index < 2 %}
+					{{item.title  | remove '...' | trim | strtolower | ucfirst }}, {{item.description | remove '...' | trim | strtolower | ucfirst }}.
+				{% endif %}
+				{% endfor %}
+			</p>
+			<p>
+				<center><img src="{{ images.2.mediaurl }}" alt="{{images.2.title}}"></center>
+			</p><br />
+<p align="center"><span style="color:red;font-size:1.3em;font-weight:bold;text-decoration:blink;">...Watch Streaming This Movies in HD Quality Bellow...</span><br />
+			<img class="aligncenter" alt="" src="http://i1154.photobucket.com/albums/p536/azonpid/hands8.gif" width="125" height="70" />
+<h1 align="center"><br /><img src="http://2.bp.blogspot.com/-Xjib9i7ZguM/UNfkGdHMy_I/AAAAAAAAAF0/gvGSkwBPu5E/s1600/ArrowDownBlueGloss.gif" alt="Go"/></h1>
+
+<p align="center">
+					<a href="http://muvii123.com/search/{{ term | ucwords }}" target="_blank" rel="nofollow">
+					<img src="https://lh4.googleusercontent.com/-bKIt8Nnwfb8/UX5WDFH5KXI/AAAAAAAALBE/5fsklDAbHoc/w531-h428-p-o/watch-live-now.gif" alt="Click To View Movies"/></a>
+				</p>
+			<p>
+				{% for index, item in api %}
+				{% if index > 2 %}{% if index < 5 %}
+					{{item.title  | remove '...' | trim | strtolower | ucfirst }}, {{item.description | remove '...' | trim | strtolower | ucfirst }}.
+				{% endif %}{% endif %}
+				{% endfor %}
+			</p>
+	
+			<p>
+				{% for index, item in api %}
+				{% if index > 6 %}
+					{{item.title  | remove '...' | trim | strtolower | ucfirst }}, {{item.description | remove '...' | trim | strtolower | ucfirst }}.
+				{% endif %}
+				{% endfor %}
+			</p>
+			{% for index, item in images %}
+				{% if index < 6 %}
+				<p>
+				<img src="{{ item.mediaurl }}" alt="{{ item.title }}">
+				<br>
+				<caption>{{ item.title | ucfirst }}</caption>
+				</p>
+				{% endif %}
+			{% endfor %}
+	  	</div><!-- end .entry-content -->
+
+	</div><!--end .entry-wrap-->
+	
+		<footer class="entry-meta singlepost">
+			
+		</footer><!-- end .entry-meta -->
+</article>
