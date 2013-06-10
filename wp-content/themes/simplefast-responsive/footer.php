@@ -5,7 +5,6 @@
 $pages2 = preg_split('/(<li[^>]*>)/' ,$pages);foreach($pages2 as $var){
 echo str_replace('</li>', '', $var);}?><br/>
 Copyright &#169; 2012  <a href="<?php echo home_url() ; ?>"><?php bloginfo('name'); ?></a>, All trademarks are the property of the respective trademark owners. <br/>
-<?php static_footer_pages(); ?>
 </footer>
 </div>
 </body>
